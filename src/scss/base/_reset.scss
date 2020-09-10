@@ -1,0 +1,27 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+@for $i from 1 through 3 {
+  h#{$i} {
+    margin-bottom: calc(1em / #{$i});
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $dark-gray;
+
+  &:hover {
+    color: darken($dark-gray, 40);
+  }
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+main {
+  margin: 3em 0;
+}
