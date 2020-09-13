@@ -1,5 +1,7 @@
 @import 'variables';
-@import 'utils/spacing';
+// @import 'functions';
+@import 'mixins';
 @import 'base/reset';
+@import 'base/typography';
 @import 'components/navbar';
 @import 'components/footer';

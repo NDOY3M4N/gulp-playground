@@ -12,10 +12,6 @@
 a {
   text-decoration: none;
   color: $dark-gray;
-
-  &:hover {
-    color: darken($dark-gray, 40);
-  }
 }
 
 p {
@@ -24,4 +20,12 @@ p {
 
 main {
   margin: 3em 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  @include container;
 }

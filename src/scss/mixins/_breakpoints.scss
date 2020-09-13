@@ -1,0 +1,10 @@
+/// Mixin to manage responsive breakpoints
+/// @author Hugo Giraudel
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints
+@mixin screen($breakpoint) {
+  // Prints a media query based on the value
+  @media (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}

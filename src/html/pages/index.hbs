@@ -1,0 +1,16 @@
+---
+layout: default
+title: Accueil
+description: Blah blah blah
+---
+
+<main class="container">
+  <h1>Voici la page <i>accueil</i></h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ducimus eligendi, reiciendis corporis quam facere quaerat qui, aspernatur molestiae velit, vero ea quisquam laborum corrupti repudiandae totam, at aliquam esse.</p>
+
+  <ul style="list-style-type: circle; margin-left: 1em">
+    {{#each tasks}}
+      <li>{{ this }}</li>
+    {{/each}}
+  </ul>
+</main>
